@@ -1,7 +1,7 @@
 # Studi_ECF
 ## Ce projet est crée dans le cadre d'un examin de l'ecole STUDI
 
-###Instalation local
+### Instalation local
 
 1.Télécharger le dossier "Gym".
 
@@ -13,7 +13,7 @@
 
 Notez que vous pouvez aussi changer le nom de la base de donées a la ligne 5 dans la constante "DB_NAME" dans le fichier "ConnectSQL.php" ouvert precedemment.
 
-###Instalation sûr un hebergeur (mise en ligne)
+### Instalation sûr un hebergeur (mise en ligne)
 
 1.Télécharger le dossier "Gym"
 
