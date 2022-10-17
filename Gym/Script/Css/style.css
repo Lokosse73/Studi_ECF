@@ -1,0 +1,388 @@
+.visible{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+html, body{
+    --color1: #1f1f1f;
+    --color2: rgb(255, 255, 255);
+
+    --Greencolor1: #8bc446;
+    --Greencolor2: #afd67d;
+    --Greencolor3: #75a238;
+
+    --Redcolor1: #c23c1c;
+    --Redcolor2: #d37562;
+    --Redcolor3: #96311f;
+    background-color: var(--color1);
+    font-family: 'Bahnschrift', sans-serif;
+
+}
+button, .button{
+    border: 1px var(--Greencolor1) solid;
+    border-radius: 0.25rem;
+    color: var(--Greencolor1);
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Bahnschrift, serif;
+}
+button:hover, .button:hover{
+    border: 1px var(--Greencolor2) solid;
+    border-radius: 0.25rem;
+    color: var(--Greencolor2);
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+button:focus, .button:focus{
+    border: 1px var(--Greencolor3) solid;
+    border-radius: 0.25rem;
+    color: var(--Greencolor3);
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.greenButton{
+    border: 1px var(--Greencolor1) solid;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: var(--Greencolor1);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    height: 26px;
+}
+.greenButton:hover{
+    border: 1px var(--Greencolor2) solid;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: var(--Greencolor2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.greenButton:focus{
+    border: 1px var(--Greencolor3) solid;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: var(--Greencolor3);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.redButton{
+    border: 1px var(--Redcolor1) solid;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: var(--Redcolor1);
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    height: 26px;
+}
+.redButton:hover{
+    border: 1px var(--Redcolor2) solid;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: var(--Redcolor2);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.redButton:focus{
+    border: 1px var(--Redcolor3) solid;
+    border-radius: 0.25rem;
+    color: white;
+    background-color: var(--Redcolor3);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.binButton{
+    border: 1px var(--Redcolor1) solid;
+    border-radius: 0.25rem;
+    background: url(../../Image/Svg/delete_forever.svg) no-repeat scroll center var(--Redcolor1);
+    height: 52px;
+    width: 70px;
+    padding: 0;
+    position: absolute;
+    bottom: -0.5px;
+    right: 0;
+    fill: white;
+}
+.binButton:hover{
+    border: 1px var(--Redcolor2) solid;
+    border-radius: 0.25rem;
+    background-color: var(--Redcolor2);
+}
+.binButton:focus{
+    border: 1px var(--Redcolor3) solid;
+    border-radius: 0.25rem;
+    background-color: var(--Redcolor3);
+}
+
+.goButton{
+    border: 1px var(--Greencolor1) solid;
+    border-radius: 0.25rem;
+    background: url(../../Image/Svg/double_arrow.svg) no-repeat scroll center var(--Greencolor1);
+    height: 52px;
+    width: 70px;
+    padding: 0;
+    position: absolute;
+    top: -0.5px;
+    right: 0;
+}
+.goButton:hover{
+    border: 1px var(--Greencolor2) solid;
+    border-radius: 0.25rem;
+    background-color: var(--Greencolor2);
+}
+.goButton:focus{
+    border: 1px var(--Greencolor3) solid;
+    border-radius: 0.25rem;
+    background-color: var(--Greencolor3);
+}
+
+a{
+    color: var(--Greencolor1);
+    font-family: Bahnschrift, serif;
+}
+a:hover{
+    color: var(--Greencolor2);
+    font-family: Bahnschrift, serif;
+}
+input:not([type="button"], [type="submit"], [type="reset"], [id="NameSearch"], [id="IdSearch"], [id="StructureNameSearch"], [id="StructureIdSearch"]){
+    height: 30px;
+    border: gray solid 1px;
+    width: 100%;
+    box-sizing: border-box;
+}
+label{
+    display: inherit;
+}
+.form-comp-connection{
+    position:fixed;
+    top : 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    background-image: url("../../Image/ConnectionImage.jpg");
+    background-size: cover;
+ }
+.form-comp{
+    position: fixed;
+    top : 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+}
+.form-Panel{
+    width: 350px;
+    overflow: hidden;
+    padding: 10px 25px;
+    border-width: 3px;
+    background-color: gray;
+    border-radius: 3px;
+}
+.card{
+    border: black 1px solid;
+    margin: 5px;
+    background-color: var(--color2);
+}
+.greencard{
+    border: var(--Greencolor1) 1px solid;
+    padding: 20px;
+}
+.greencard button{
+    margin: 10px 0 0 0;
+}
+.greencard input:not([type="submit"]){
+    border: var(--Greencolor1) 1px solid;
+    border-radius: 0.25rem;
+}
+.card-img{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 60px;
+}
+.card-img a{
+    width: 150px;
+    height: 150px;
+}
+.card-img img{
+    display: block;
+    margin: auto;
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+}
+.card-info{
+    margin: 45px 0 0 10px;
+}
+.card-info-2{
+    margin-left: 100px;
+}
+.card p{
+    margin: 0;
+}
+.card-button{
+    margin-left: auto;
+    justify-content: space-evenly;
+}
+.card-button button{
+    display: flex;
+}
+.card-button button:first-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.card-button button:last-child{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.card-active{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card-activeStruct{
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input[type="button"][value="ON"]{
+    background-color: var(--Greencolor1);
+    border: var(--Greencolor1);
+    border-radius: 50px;
+    color: white;
+    padding-right: 30px;
+}
+input[type="button"][value="ON"] + span{
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 50px;
+    position: absolute;
+    right: 50px;
+    top: 3px;
+    cursor: pointer;
+}
+
+input[type="button"][value="OFF"]{
+    background-color: var(--Redcolor1);
+    border: var(--Redcolor1);
+    border-radius: 50px;
+    color: white;
+    padding-left: 27px;
+}
+input[type="button"][value="OFF"] + span{
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 50px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
+}
+
+.redInactive{
+    color: var(--Redcolor1);
+    border-color: var(--Redcolor1) !important;
+}
+.redInactive::placeholder{
+    color: var(--Redcolor1);
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    flex-direction: inherit;
+}
+.flexMobile{
+    display: flex;
+    flex-direction: inherit;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: var(--color1);
+    z-index: 200;
+    text-align: center;
+}
+.tutoImage{
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+@media screen and (max-width: 950px){
+
+    .grid{
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .flex{
+        display: block;
+    }
+    .card-client{
+        height: 175px;
+    }
+    .card-button button img{
+        width: 50%;
+        height: auto;
+    }
+    .card-img img{
+        width: 50px;
+    }
+    .card-img{
+        margin-top: 26px;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 26px;
+    }
+    .goButton, .binButton{
+        height: 26px;
+        width: 35px;
+        background-size: 50%;
+    }
+    .card-info{
+         margin: 26px 0 0 10px;
+    }
+    .card-active{
+        margin: 0;
+    }
+    .card-info-2{
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+}
